@@ -1,0 +1,9 @@
+create table news(
+id serial primary key,
+headline varchar(50) not null unique,
+text_news varchar(500) not null,
+time_publication varchar(20)not null unique
+);
+
+insert into news(headline,text_news,time_publication)
+values ('HotNews','Someone killed the human','22:45');
